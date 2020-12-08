@@ -42,12 +42,28 @@
     "webpack-cli": "^3.3.11"
   },
   "importModules": [
-    "TorrentList"
+    "TorrentList",
+    "RemoteTorrentList",
+    "TorrentsAppHeader"
   ],
   "routes": [
     {
       "route": "/torrents",
-      "component": "TorrentList"
+      "component": "TorrentsAppHeader",
+      "exact": true
+    },
+    {
+      "route": "/torrents/torrents",
+      "component": "TorrentList",
+      "exact": true
+    },    {
+      "route": "/torrents/remotetorrents",
+      "component": "RemoteTorrentList",
+      "exact": true
     }
-  ]
+  ],
+  "link": {
+    "href": "/torrents",
+    "text": "Torrents"
+  }
 }

@@ -7,6 +7,7 @@ import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
 import Table from '@material-ui/core/Table';
 import { Button, TextField } from '@material-ui/core';
+import TorrentsAppHeader from "./TorrentsAppHeader";
 
 const Torrent = (props) => {
   return <TableRow>
@@ -70,12 +71,13 @@ class TorrentList extends Component {
 
   render() {
     return <div>
+      <TorrentsAppHeader />
       <TableContainer>
         <Table aria-label="table">
           <TableHead>
             <TableRow key={"title"}>
               <TableCell colSpan={4} style={ {textAlign: 'center'} }>
-                <h4>Torrents</h4>
+                <h4>List of torrents</h4>
               </TableCell>
             </TableRow>
           </TableHead>
