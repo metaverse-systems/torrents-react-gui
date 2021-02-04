@@ -1,6 +1,6 @@
 {
   "name": "@metaverse-systems/torrents-react-gui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -9,12 +9,6 @@
   },
   "author": "Tim Schwartz",
   "license": "MIT",
-  "peerDependencies": {
-    "@material-ui/core": "^4.10.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
